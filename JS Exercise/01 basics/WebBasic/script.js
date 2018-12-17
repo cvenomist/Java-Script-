@@ -6,8 +6,13 @@
 
 // myPElement.textContent = 'I Am Changed by Java Script'
 
-const myPElements = document.querySelectorAll('p')
+const myElement = document.querySelectorAll('.classone')
+console.log(myElement[0]);
 
-myPElements.forEach(function(p){
-    p.textContent = 'I Am Changed Using For Each loop'
+//Track Input Form
+
+document.querySelector('#myform').addEventListener('input', ()=> {
+console.log(event.target.value);
+
 })
+
